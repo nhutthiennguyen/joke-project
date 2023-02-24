@@ -11,7 +11,7 @@ function Hero(props: IProps) {
     <Grid
       container
       xs={12}
-      style={{ backgroundColor: 'green', minHeight: '300px' }}
+      style={{ backgroundColor: '#29b363', minHeight: '300px' }}
       alignItems='center'
     >
       <Grid item xs={12} minHeight={50}>
@@ -19,7 +19,7 @@ function Hero(props: IProps) {
           <Typography variant='h4' align='center' mb={5}>
             {title}
           </Typography>
-          <Typography variant='h6' align='center'>
+          <Typography variant='body2' align='center'>
             {description}
           </Typography>
         </Stack>

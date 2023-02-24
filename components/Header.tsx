@@ -26,7 +26,7 @@ function Header(props: IProps) {
       </Grid>
       <Grid item xs={2} style={{ alignContent: 'flex-start' }} display='flex'>
         <Stack flexDirection='column' alignItems='flex-end' margin={1}>
-          <Typography fontSize={10} color='black'>
+          <Typography fontSize={10} color='black' fontStyle='italic'>
             {user.description}
           </Typography>
           <Typography fontSize={10} color='black'>

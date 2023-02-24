@@ -1,7 +1,6 @@
 import { Question } from '@/pages'
 import { getQuestions } from '@/services/question'
 import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import { setCookie } from 'cookies-next'
 import React from 'react'
 interface IProps {
   question: Question | null

@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography, Divider } from '@mui/material'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Content from '@/components/Content'
@@ -31,20 +31,22 @@ export default function Home() {
           logo={logo}
           user={{
             avatar: logo,
-            name: 'Ricardo',
-            description: 'Coder is expected to follow',
+            name: 'Jim HLS',
+            description: 'Handicrafted by',
           }}
         />
 
         <Hero
-          title='How are you to day'
-          description='has voted for a joke. It is okay if the user clears his cookie and votes again'
+          title='A joke a day keeps doctor away'
+          description='If you joke wrong way, your teeth have to pay. (Serious)'
         ></Hero>
         <Content
           question={question ? question : null}
           pickQuestion={(data: any) => setQuestion(data)}
           onSubmit={(id: number, type: number) => postQuestion(id, type)}
         />
+        <Divider orientation='horizontal' variant='middle'></Divider>
+
         <Footer />
       </Grid>
     </>
